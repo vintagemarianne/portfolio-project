@@ -1,0 +1,117 @@
+.main-contact {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+}
+
+.main-section--contact {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.main-section--contact h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.main-section--contact form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.main-section--contact .primary-button {
+    width: 90px;
+    background: var(--primaryColor);
+    color: var(--lightColor);
+    margin: 12px 0 0 !important;
+}
+
+.main-section--contact .input-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.floating-label {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 11px;
+    padding: 0 5px;
+    background-color: #fff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.floating-input {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 46px;
+    padding: 0 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.floating-input:focus {
+    outline: none;
+    border: 2px solid var(--primaryColor);
+}
+
+.floating-input:focus ~ .floating-label {
+    top: -8px;
+    font-size: 13px;
+    color: var(--primaryColor);
+}
+
+.floating-input:focus ~ .floating-label--required:after {
+    content: " *";
+    color: var(--primaryColor);
+}
+
+textarea.floating-input {
+    height: 150px;
+    padding: 16px 20px;
+}
+
+.floating-input:not(:placeholder-shown) ~ .floating-label {
+    top: -8px;
+    font-size: 13px;
+}
+
+/*lt-lg*/
+@media screen and (max-width: var(--screen-md-max)) {
+    .main-contact {
+        padding-top: var(--sectionPaddingMd);
+        padding-bottom: var(--sectionPaddingMd);
+    }
+}
+
+/*lt-md*/
+@media screen and (max-width: var(--screen-sm-max)) {
+    .main-contact {
+        padding-top: var(--sectionPaddingSm);
+        padding-bottom: var(--sectionPaddingSm);
+    }
+}
+
+/*lt-sm*/
+@media screen and (max-width: var(--screen-xs-max)) {
+
+}
