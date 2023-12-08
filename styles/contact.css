@@ -96,7 +96,7 @@ textarea.floating-input {
 }
 
 /*lt-lg*/
-@media screen and (max-width: var(--screen-md-max)) {
+@media screen and (max-width: 1279px) {
     .main-contact {
         padding-top: var(--sectionPaddingMd);
         padding-bottom: var(--sectionPaddingMd);
@@ -104,14 +104,9 @@ textarea.floating-input {
 }
 
 /*lt-md*/
-@media screen and (max-width: var(--screen-sm-max)) {
+@media screen and (max-width: 959px) {
     .main-contact {
         padding-top: var(--sectionPaddingSm);
         padding-bottom: var(--sectionPaddingSm);
     }
-}
-
-/*lt-sm*/
-@media screen and (max-width: var(--screen-xs-max)) {
-
 }

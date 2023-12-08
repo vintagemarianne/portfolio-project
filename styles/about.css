@@ -90,7 +90,7 @@
 }
 
 /*lt-lg*/
-@media screen and (max-width: var(--screen-md-max)) {
+@media screen and (max-width: 1279px) {
     .main-about {
         padding-top: var(--sectionPaddingMd);
     }
@@ -101,7 +101,7 @@
 }
 
 /*lt-md*/
-@media screen and (max-width: var(--screen-sm-max)) {
+@media screen and (max-width: 959px) {
     .main-about {
         padding-top: var(--sectionPaddingSm);
     }

@@ -119,7 +119,7 @@ footer a {
 }
 
 /*lt-lg*/
-@media screen and (max-width: var(--screen-md-max)) {
+@media screen and (max-width: 1279px) {
     .main-section {
         padding: 0 2rem;
     }

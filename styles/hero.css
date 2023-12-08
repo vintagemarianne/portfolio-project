@@ -132,14 +132,14 @@
 }
 
 /*lt-lg*/
-@media screen and (max-width: var(--screen-md-max)) {
+@media screen and (max-width: 1279px) {
     .main-hero {
         padding-top: var(--headerHeightMd);
     }
 }
 
 /*lt-md*/
-@media screen and (max-width: var(--screen-sm-max)) {
+@media screen and (max-width: 959px) {
     .main-section--hero {
         justify-content: center;
     }
@@ -165,7 +165,7 @@
 }
 
 /*lt-sm*/
-@media screen and (max-width: var(--screen-xs-max)) {
+@media screen and (max-width: 599px) {
     .main-hero {
         padding-top: var(--headerHeightSm);
     }
@@ -190,7 +190,7 @@
 }
 
 /*gt-sm*/
-@media screen and (min-width: var(--screen-md-min)) {
+@media screen and (min-width: 960px) {
     .main-section--hero .typed {
         overflow: hidden;
         white-space: nowrap;

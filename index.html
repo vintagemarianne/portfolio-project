@@ -51,8 +51,17 @@
                 </ul>
             </nav>
             <button class='menu-btn'>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" style="pointer-events: none"></i>
             </button>
+            <div class='menu-container' id='menuContainer'>
+                <div class='menu-shadow'></div>
+                <nav class='menu-list'>
+                    <a class='nav-link' href='#hero'>HOME</a>
+                    <a class='nav-link' href='#about'>ABOUT</a>
+                    <a class='nav-link' href='#experiences'>EXPERIENCES</a>
+                    <a class='nav-link' href='#contact'>CONTACT</a>
+                </nav>
+            </div>
         </section>
     </header>
     <section id='hero' class='main-hero'>
@@ -240,6 +249,7 @@
         </section>
     </footer>
 </section>
+<script src="src/app.js"></script>
 </body>
 
 </html>
