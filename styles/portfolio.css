@@ -1,50 +1,100 @@
-:root {
-  font-family: 'Prompt', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body, html {
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: var(--font-family);
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 body::-webkit-scrollbar {
-  width: 0.3em;
+    width: 0.3em;
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  border-radius: 4px;
-  outline: 1px solid slategrey;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-#root {
-  width: 100%;
-  height: 100%;
+    background-color: darkgrey;
+    border-radius: 4px;
+    outline: 1px solid slategrey;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 button {
-  font-family: 'Prompt', sans-serif;
+    font-family: var(--font-family);
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 circle {
-  transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.main-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 4rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 42px;
+    border-radius: .25rem;
+    background-color: var(--lightColor);
+    color: var(--primaryColor);
+    border: none;
+    cursor: pointer;
+}
+
+.secondary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 42px;
+    border-radius: .25rem;
+    margin-right: 0.5rem;
+    background-color: transparent;
+    border: 2px solid var(--lightColor);
+    color: var(--lightColor);
+    cursor: pointer;
+}
+
+/*lt-lg*/
+@media screen and (max-width: var(--screen-md-max)) {
+    .main-section {
+        padding: 0 2rem;
+    }
+}
+
+/*lt-md*/
+@media screen and (max-width: var(--screen-sm-max)) {
+}
+
+/*lt-sm*/
+@media screen and (max-width: var(--screen-xs-max)) {
+}
+
+/*gt-sm*/
+@media screen and (min-width: var(--screen-md-min)) {
 }

@@ -1,0 +1,36 @@
+:root {
+    /*color palette*/
+    --primaryColor: #CD3039;
+    --secondaryColor: #ED554D;
+    --lightColor: #FCFCFC;
+
+    --color1: #E3D1D1;
+    --color2: #725F68;
+    --color3: #E7A59B;
+    --color4: #8DABCF;
+
+    --font-family: 'Prompt', sans-serif;
+
+    /*media aliases and breakpoints*/
+    --screen-sm-min: 600px;
+    --screen-md-min: 960px;
+    --screen-lg-min: 1280px;
+    --screen-xl-min: 1920px;
+
+    --screen-xs-max: 599px;
+    --screen-sm-max: 959px;
+    --screen-md-max: 1279px;
+    --screen-lg-max: 1919px;
+    --screen-xl-max: 5000px;
+
+    /*variables*/
+    --headerHeight: 64px;
+    --headerHeightMd: 48px;
+    --headerHeightSm: 40px;
+
+    --sectionPadding: 106px;
+    --sectionPaddingMd: 80px;
+    --sectionPaddingSm: 48px;
+
+    --bgGradient: linear-gradient(112.1deg, #CD3039 11.4%, #ED554D 70.2%);
+}
