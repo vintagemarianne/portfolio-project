@@ -82,6 +82,8 @@ circle {
 
 footer {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 footer .main-section {
