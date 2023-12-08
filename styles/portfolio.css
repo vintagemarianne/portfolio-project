@@ -80,21 +80,47 @@ circle {
     cursor: pointer;
 }
 
+footer {
+    width: 100%;
+}
+
+footer .main-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 13px;
+}
+
+footer a {
+    color: var(--color2);
+    margin-top: 0;
+}
+
+.social-btn-list {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+    margin: 8px;
+}
+
+.social-btn-list .social-btn,
+.social-btn-list a {
+    font-size: 24px;
+    color: rgba(51, 57, 84, 0.72);
+}
+
+.social-btn-list .social-btn,
+.social-btn-list a:hover {
+    color: var(--color4);
+}
+
 /*lt-lg*/
 @media screen and (max-width: var(--screen-md-max)) {
     .main-section {
         padding: 0 2rem;
     }
-}
-
-/*lt-md*/
-@media screen and (max-width: var(--screen-sm-max)) {
-}
-
-/*lt-sm*/
-@media screen and (max-width: var(--screen-xs-max)) {
-}
-
-/*gt-sm*/
-@media screen and (min-width: var(--screen-md-min)) {
 }
